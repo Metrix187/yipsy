@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>yipsy — a puppygirl language model in pure css</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐶</text></svg>">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="model.css">
+</head>
+<body>
+<input class="vh" type="radio" name="seed" id="seed-yips" checked>
+<input class="vh" type="radio" name="seed" id="seed-pupp">
+<input class="vh" type="radio" name="seed" id="seed-good">
+<input class="vh" type="radio" name="seed" id="seed-ball">
+<input class="vh" type="radio" name="seed" id="seed-snow">
+<input class="vh" type="radio" name="seed" id="seed-trea">
+<input class="vh" type="radio" name="seed" id="seed-bell">
+<input class="vh" type="radio" name="seed" id="seed-zoom">
+<input class="vh" type="radio" name="roll" id="roll-r1" checked>
+<input class="vh" type="radio" name="roll" id="roll-r2">
+<input class="vh" type="radio" name="roll" id="roll-r3">
+<input class="vh" type="radio" name="roll" id="roll-r4">
+<input class="vh" type="radio" name="tamp" id="tamp-sleepy">
+<input class="vh" type="radio" name="tamp" id="tamp-waggy" checked>
+<input class="vh" type="radio" name="tamp" id="tamp-zoomies">
+<div class="page">
+  <header>
+    <h1>yipsy<span class="paw">🐾</span></h1>
+    <p class="tag">a 6796 parameter puppygirl language model that lives entirely in css.
+    no javascript anywhere on this page. pick a prompt and she generates
+    100 characters in a single style pass.</p>
+  </header>
+  <div class="warn">this browser is missing some css math (mod, sign, or style queries).
+  yipsy needs a recent chromium or safari to think. she is not mad, just quiet.</div>
+  <section class="controls" aria-label="model controls">
+    <div class="group"><span class="glabel">prompt</span>
+        <label for="seed-yips">yips</label>
+        <label for="seed-pupp">pupp</label>
+        <label for="seed-good">good</label>
+        <label for="seed-ball">ball</label>
+        <label for="seed-snow">snow</label>
+        <label for="seed-trea">trea</label>
+        <label for="seed-bell">bell</label>
+        <label for="seed-zoom">zoom</label>
+    </div>
+    <div class="group"><span class="glabel">reroll</span>
+        <label for="roll-r1">🎾</label>
+        <label for="roll-r2">🦴</label>
+        <label for="roll-r3">🧸</label>
+        <label for="roll-r4">🍖</label>
+    </div>
+    <div class="group"><span class="glabel">temperature</span>
+        <label for="tamp-sleepy">sleepy</label>
+        <label for="tamp-waggy">waggy</label>
+        <label for="tamp-zoomies">zoomies</label>
+    </div>
+  </section>
+  <section class="bubble">
+    <span class="avatar">🐶</span>
+    <p class="out"><span class="lead"></span><span class="gen"><span class="c"><span class="g"></span><span class="x"><span class="y"><span class="c"><span class="g"></span><span class="x"><span class="y"><span class="c"><span class="g"></span><span class="x"><span class="y"><span class="c"><span class="g"></span><span class="x"><span class="y"><span class="c"><span class="g"></span><span class="x"><span class="y"><span class="c"><span class="g"></span><span class="x"><span class="y"><span class="c"><span class="g"></span><span class="x"><span class="y"><span class="c"><span class="g"></span><span class="x"><span class="y"><span class="c"><span class="g"></span><span class="x"><span class="y"><span class="c"><span class="g"></span><span class="x"><span class="y"><span class="c"><span class="g"></span><span class="x"><span class="y"><span class="c"><span class="g"></span><span class="x"><span class="y"><span class="c"><span class="g"></span><span class="x"><span class="y"><span class="c"><span class="g"></span><span class="x"><span class="y"><span class="c"><span class="g"></span><span class="x"><span class="y"><span class="c"><span class="g"></span><span class="x"><span class="y"><span class="c"><span class="g"></span><span class="x"><span class="y"><span class="c"><span class="g"></span><span class="x"><span class="y"><span class="c"><span class="g"></span><span class="x"><span class="y"><span class="c"><span class="g"></span><span class="x"><span class="y"><span class="c"><span class="g"></span><span class="x"><span class="y"><span class="c"><span class="g"></span><span class="x"><span class="y"><span class="c"><span class="g"></span><span class="x"><span class="y"><span class="c"><span class="g"></span><span class="x"><span class="y"><span class="c"><span class="g"></span><span class="x"><span class="y"><span class="c"><span class="g"></span><span class="x"><span class="y"><span class="c"><span class="g"></span><span class="x"><span class="y"><span class="c"><span class="g"></span><span class="x"><span class="y"><span class="c"><span class="g"></span><span class="x"><span class="y"><span class="c"><span class="g"></span><span class="x"><span class="y"><span class="c"><span class="g"></span><span class="x"><span class="y"><span class="c"><span class="g"></span><span class="x"><span class="y"><span class="c"><span class="g"></span><span class="x"><span class="y"><span class="c"><span class="g"></span><span class="x"><span class="y"><span class="c"><span class="g"></span><span class="x"><span class="y"><span class="c"><span class="g"></span><span class="x"><span class="y"><span class="c"><span class="g"></span><span class="x"><span class="y"><span class="c"><span class="g"></span><span class="x"><span class="y"><span class="c"><span class="g"></span><span class="x"><span class="y"><span class="c"><span class="g"></span><span class="x"><span class="y"><span class="c"><span class="g"></span><span class="x"><span class="y"><span class="c"><span class="g"></span><span class="x"><span class="y"><span class="c"><span class="g"></span><span class="x"><span class="y"><span class="c"><span class="g"></span><span class="x"><span class="y"><span class="c"><span class="g"></span><span class="x"><span class="y"><span class="c"><span class="g"></span><span class="x"><span class="y"><span class="c"><span class="g"></span><span class="x"><span class="y"><span class="c"><span class="g"></span><span class="x"><span class="y"><span class="c"><span class="g"></span><span class="x"><span class="y"><span class="c"><span class="g"></span><span class="x"><span class="y"><span class="c"><span class="g"></span><span class="x"><span class="y"><span class="c"><span class="g"></span><span class="x"><span class="y"><span class="c"><span class="g"></span><span class="x"><span class="y"><span class="c"><span class="g"></span><span class="x"><span class="y"><span class="c"><span class="g"></span><span class="x"><span class="y"><span class="c"><span class="g"></span><span class="x"><span class="y"><span class="c"><span class="g"></span><span class="x"><span class="y"><span class="c"><span class="g"></span><span class="x"><span class="y"><span class="c"><span class="g"></span><span class="x"><span class="y"><span class="c"><span class="g"></span><span class="x"><span class="y"><span class="c"><span class="g"></span><span class="x"><span class="y"><span class="c"><span class="g"></span><span class="x"><span class="y"><span class="c"><span class="g"></span><span class="x"><span class="y"><span class="c"><span class="g"></span><span class="x"><span class="y"><span class="c"><span class="g"></span><span class="x"><span class="y"><span class="c"><span class="g"></span><span class="x"><span class="y"><span class="c"><span class="g"></span><span class="x"><span class="y"><span class="c"><span class="g"></span><span class="x"><span class="y"><span class="c"><span class="g"></span><span class="x"><span class="y"><span class="c"><span class="g"></span><span class="x"><span class="y"><span class="c"><span class="g"></span><span class="x"><span class="y"><span class="c"><span class="g"></span><span class="x"><span class="y"><span class="c"><span class="g"></span><span class="x"><span class="y"><span class="c"><span class="g"></span><span class="x"><span class="y"><span class="c"><span class="g"></span><span class="x"><span class="y"><span class="c"><span class="g"></span><span class="x"><span class="y"><span class="c"><span class="g"></span><span class="x"><span class="y"><span class="c"><span class="g"></span><span class="x"><span class="y"><span class="c"><span class="g"></span><span class="x"><span class="y"><span class="c"><span class="g"></span><span class="x"><span class="y"><span class="c"><span class="g"></span><span class="x"><span class="y"><span class="c"><span class="g"></span><span class="x"><span class="y"><span class="c"><span class="g"></span><span class="x"><span class="y"><span class="c"><span class="g"></span><span class="x"><span class="y"><span class="c"><span class="g"></span><span class="x"><span class="y"><span class="c"><span class="g"></span><span class="x"><span class="y"><span class="c"><span class="g"></span><span class="x"><span class="y"><span class="c"><span class="g"></span><span class="x"><span class="y"><span class="c"><span class="g"></span><span class="x"><span class="y"><span class="c"><span class="g"></span><span class="x"><span class="y"><span class="c"><span class="g"></span><span class="x"><span class="y"><span class="c"><span class="g"></span><span class="x"><span class="y"><span class="c"><span class="g"></span><span class="x"><span class="y"><span class="c"><span class="g"></span><span class="x"><span class="y"><span class="c"><span class="g"></span><span class="x"><span class="y"><span class="c"><span class="g"></span><span class="x"><span class="y"><span class="c"><span class="g"></span><span class="x"><span class="y"><span class="c"><span class="g"></span><span class="x"><span class="y"><span class="c"><span class="g"></span><span class="x"><span class="y"><span class="c"><span class="g"></span><span class="x"><span class="y"><span class="end"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></p>
+  </section>
+  <footer>
+    <p>she is 6796 trained parameters wearing a stylesheet. layer one is
+    container style queries, the matmul is calc(), the argmax is a sign() trick,
+    the autoregression is 100 nested spans. temperature is a little linear
+    congruential generator, also in calc().</p>
+    <p>weights trained on an original bedtime corpus about a small dog. she
+    mostly says things about the ball. wtfpup licensed.</p>
+  </footer>
+</div>
+</body>
+</html>
