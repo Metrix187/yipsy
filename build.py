@@ -208,8 +208,9 @@ html = f"""<!doctype html>
     no javascript anywhere on this page. pick a prompt and she generates
     {N_OUT} characters in a single style pass.</p>
   </header>
-  <div class="warn">this browser is missing some css math (mod, sign, or style queries).
-  yipsy needs a recent chromium or safari to think. she is not mad, just quiet.</div>
+  <div class="warn">this browser is missing some css math (mod, sign, &#64;property, or
+  container style queries). yipsy needs chromium 138+, safari 18+, or firefox 151+ to
+  think. she is not mad, just quiet.</div>
   <section class="controls" aria-label="model controls">
     <div class="group"><span class="glabel">prompt</span>
         {seed_pills}

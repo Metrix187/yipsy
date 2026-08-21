@@ -14,10 +14,13 @@ engine is a stylesheet. she is also very small and mostly talks about the ball.
 
 double-click `index.html`. that's it — the page has zero script to serve.
 
-she needs css `mod()`, `sign()` and container style queries, so: chromium 125+,
-safari 18+, firefox 140+. anything older gets a polite notice instead of a
-broken page (the notice hides itself via the same style-query machinery it's
-testing for, which is my favorite line of the stylesheet).
+she needs css `mod()`, `sign()`, container style queries and registered custom
+properties (`@property`), so: **chromium 138+, safari 18+, firefox 151+**. the
+binding constraint is different in each engine — `sign()` in chromium (138, later
+than you'd think), container style queries in safari (18) and firefox (151).
+anything older gets a polite notice instead of a broken page (the notice hides
+itself via the same style-query machinery it's testing for, which is my favorite
+line of the stylesheet).
 
 ## what is actually happening
 
