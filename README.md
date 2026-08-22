@@ -12,7 +12,8 @@ engine is a stylesheet. she is also very small and mostly talks about the ball.
 
 ## try her
 
-double-click `index.html`. that's it — the page has zero script to serve.
+[**try her live**](https://metrix187.github.io/yipsy/), or double-click `index.html`.
+that's it — the page has zero script to serve.
 
 she needs css `mod()`, `sign()`, container style queries and registered custom
 properties (`@property`), so: **chromium 138+, safari 18+, firefox 151+**. the
@@ -79,8 +80,13 @@ page, paste this in the console:
 })();
 ```
 
-96/96 when i shipped this. the cascade really is doing the inference — same
-bytes out as the python forward pass, every combo.
+96/96, re-verified on chrome 148. the cascade really is doing the inference — same
+bytes out as the python forward pass, every combo. one prompt costs about 0.4s of
+style recalculation (p50 over all 96 combos; min 103 ms, p90 472 ms).
+
+the pipeline is deterministic end to end, too: `train.py` is seeded, so retraining
+from `corpus.txt` gives back the same `weights.json`, and `build.py` on those weights
+gives back the same `model.css`. you can rebuild her from the corpus up.
 
 ## retrain her
 
